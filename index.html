@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon Super Trunfo</title>
+</head>
+<body>
+    <div class="placar">
+        <div>
+            <p id="rodada">Rodada: 0</p>
+        </div>
+        <p class="placar-player">Player: 0</p>
+        <p class="placar-enimy">Enimy: 0</p>
+        <div></div>
+    </div>
+    <div class="tabuleiro">
+        <div class="lado-player">
+            <div class="carta" id="carta-player">
+                <div class="jc-sb">
+                    <p id="nome-pokemon-player">Nome</p>
+                    <p id="id-pokemon-player">Id: 0</p>
+                </div>
+                <img id="img-pokemon-player" src="" alt="">
+                <div class="jc-sb">
+                    <p id="ataq-pokemon-player">Ataq: 0</p>
+                    <p id="def-pokemon-player">Def: 0</p>
+                </div>
+                <div class="jc-sb">
+                    <p id="ataq-esp-pokemon-player">Ataq Esp: 0</p>
+                    <p id="def-esp-pokemon-player">Def Esp: 0</p>
+                </div>
+            </div>
+        </div>
+        <div class="lado-enimy">
+            <div class="carta" id="carta-enimy">
+                <div class="jc-sb">
+                    <p id="nome-pokemon-enimy">Nome</p>
+                    <p id="id-pokemon-enimy">Id: 0</p>
+                </div>
+                <img  id="img-pokemon-enimy" src="" alt="">
+                <div class="jc-sb">
+                    <p id="ataq-pokemon-enimy">Ataq: 0</p>
+                    <p id="def-pokemon-enimy">Def: 0</p>
+                </div>
+                <div class="jc-sb">
+                    <p id="ataq-esp-pokemon-enimy">Ataq Esp: 0</p>
+                    <p id="def-esp-pokemon-enimy">Def Esp: 0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="msg-comandos">
+        <div class="msg">Empatou</div>
+        <div class="comprar">
+            <button id="bt-compra">comprar</button>
+        </div>
+        <div class="comandos">
+            <div>
+                <button id="bt-ataq" disabled>Ataque</button>
+                <button id="bt-def" disabled>Defesa</button>
+            </div>
+            <div>
+                <button id="bt-ataq-esp" disabled>Ataque Esp</button>
+                <button id="bt-def-esp" disabled>Defesa Esp</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="tela-inicial">
+        <div>
+            <label for="name-player">Nome do jogador</label>
+            <input id="name-player" type="text" value="Player">
+            <label for="name-enimy">Nome do inimigo</label>
+            <input id="name-enimy" type="text" value="Enimy">
+            <Button id="start">Começar</Button>
+
+        </div>
+    </div>
+    <div class="tela-final">
+        <div>
+            <p class="msg-final"></p>
+            <button id="jogar-novamente">Jogar Novamente</button>
+            <div class="lista-time-pokemon">
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
